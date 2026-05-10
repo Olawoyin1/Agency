@@ -23,13 +23,13 @@ const cards = [
 
 // Slot positions for the 5 positions: far-left, left, center, right, far-right
 const SLOTS = {
-    '-3': { x: -1200, y: 160, rotate: 32, scale: 0.50, opacity: 0 },
-    '-2': { x: -800, y: 80, rotate: 22, scale: 0.68, opacity: 0.40 },
-    '-1': { x: -390, y: 28, rotate: 13, scale: 0.84, opacity: 1 },
+    '-3': { x: -1200, y: 160, rotate: 0, scale: 0.50, opacity: 0 },
+    '-2': { x: -800, y: 80, rotate: 0, scale: 0.68, opacity: 0.40 },
+    '-1': { x: -390, y: 28, rotate: 0, scale: 0.84, opacity: 1 },
     '0': { x: 0, y: 0, rotate: 0, scale: 1.00, opacity: 1 },
-    '1': { x: 390, y: 28, rotate: -13, scale: 0.84, opacity: 1 },
-    '2': { x: 800, y: 80, rotate: -22, scale: 0.68, opacity: 0.40 },
-    '3': { x: 1200, y: 160, rotate: -32, scale: 0.50, opacity: 0 },
+    '1': { x: 390, y: 28, rotate: 0, scale: 0.84, opacity: 1 },
+    '2': { x: 800, y: 80, rotate: 0, scale: 0.68, opacity: 0.40 },
+    '3': { x: 1200, y: 160, rotate: 0, scale: 0.50, opacity: 0 },
 };
 
 function lerp(a, b, t) { return a + (b - a) * t; }
@@ -145,8 +145,7 @@ export default function Hero() {
                 {cards.map((card, i) => (
                     <div key={i} style={cardStyle(i)}>
                         {/* Polaroid */}
-                        <div className="bg-white rounded-2xl overflow-hidden shadow-[0_24px_64px_rgba(0,0,0,0.14)] select-none"
-                            style={{ transform: `rotate(${card.rotate}deg)` }}>
+                        <div className="bg-white rounded-2xl overflow-hidden shadow-[0_24px_64px_rgba(0,0,0,0.14)] select-none">
                             <div style={{ aspectRatio: '4/3', overflow: 'hidden' }}>
                                 <img src={card.img} alt={card.title}
                                     className="w-full h-full object-cover"
