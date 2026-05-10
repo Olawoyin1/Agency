@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #111111;
+  --color-secondary: #737373;
+  --color-background: #ffffff;
+  --color-text-main: #111111;
+
+  --font-sans: 'Nunito', system-ui, -apple-system, sans-serif;
+  --font-heading: 'Nunito', system-ui, -apple-system, sans-serif;
+
+  --animate-scroll: scroll 30s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+* {
+  cursor: none !important;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-background);
+  color: var(--color-text-main);
+  @apply antialiased font-sans;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  letter-spacing: -0.04em;
+}
+
+.modern-input {
+  @apply w-full bg-transparent border-b border-gray-200 px-0 py-4 text-black focus:outline-none focus:border-black transition-all duration-300 placeholder:text-gray-400 font-sans text-lg font-light;
+}
+
+/* Minimalist Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e5e5e5;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d4d4d4;
+}

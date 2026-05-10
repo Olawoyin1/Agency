@@ -1,0 +1,171 @@
+.projects-page {
+  background: linear-gradient(135deg, #0f0f1e 0%, #16213e 100%);
+  min-height: calc(100vh - 80px);
+  padding: 80px 20px 60px;
+}
+
+.projects-header {
+  text-align: center;
+  margin-bottom: 60px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projects-header h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.projects-header p {
+  font-size: 1.2rem;
+  color: #b0b0b0;
+  line-height: 1.6;
+}
+
+.projects-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.project-card-large {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.08) 0%, rgba(118, 75, 162, 0.08) 100%);
+  border: 1px solid rgba(102, 126, 234, 0.15);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 30px;
+}
+
+.project-card-large img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.project-card-large:hover {
+  border-color: rgba(102, 126, 234, 0.4);
+  box-shadow: 0 20px 40px rgba(102, 126, 234, 0.15);
+}
+
+.project-card-large:hover img {
+  transform: scale(1.05);
+}
+
+.project-details {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.category-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 6px 15px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  width: fit-content;
+}
+
+.project-details h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #e0e0e0;
+}
+
+.project-details p {
+  color: #b0b0b0;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.technologies {
+  margin-bottom: 20px;
+}
+
+.technologies strong {
+  color: #667eea;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tech-item {
+  background: rgba(102, 126, 234, 0.15);
+  color: #667eea;
+  padding: 5px 12px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  border: 1px solid rgba(102, 126, 234, 0.3);
+}
+
+.project-link {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.project-link:hover {
+  color: #764ba2;
+  transform: translateX(5px);
+}
+
+@media screen and (max-width: 1024px) {
+  .project-card-large {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card-large img {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .projects-page {
+    padding: 40px 20px 30px;
+  }
+
+  .projects-header h1 {
+    font-size: 2rem;
+  }
+
+  .project-details {
+    padding: 20px;
+  }
+
+  .project-details h2 {
+    font-size: 1.3rem;
+  }
+
+  .projects-list {
+    gap: 25px;
+  }
+}

@@ -1,0 +1,75 @@
+.about-page {
+  background: linear-gradient(135deg, #0f0f1e 0%, #16213e 100%);
+  min-height: calc(100vh - 80px);
+  padding: 80px 20px 60px;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 60px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-header h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.about-header p {
+  font-size: 1.2rem;
+  color: #b0b0b0;
+  line-height: 1.6;
+}
+
+.team-section {
+  max-width: 1200px;
+  margin: 80px auto 0;
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
+  border: 1px solid rgba(102, 126, 234, 0.1);
+  border-radius: 10px;
+}
+
+.team-section h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 30px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.team-section p {
+  font-size: 1.1rem;
+  color: #b0b0b0;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .about-page {
+    padding: 40px 20px 30px;
+  }
+
+  .about-header h1 {
+    font-size: 2rem;
+  }
+
+  .team-section {
+    padding: 40px 20px;
+  }
+
+  .team-section h2 {
+    font-size: 1.8rem;
+  }
+}
