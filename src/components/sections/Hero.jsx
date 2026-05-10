@@ -112,10 +112,6 @@ export default function Hero() {
                 <motion.div initial="hidden" animate="visible" variants={staggerContainer}
                     className="max-w-[1400px] mx-auto text-center flex flex-col items-center">
 
-                    <motion.div variants={fadeUp}
-                        className="mb-8 px-5 py-2.5 rounded-full border border-black/5 bg-white/70 backdrop-blur-md text-[11px] font-bold tracking-[0.2em] text-[#7A7A7A] uppercase inline-flex items-center gap-3 shadow-md shadow-black/5">
-                        <span className="w-2 h-2 rounded-full bg-[#1A1A1A]" /> Digital Agency
-                    </motion.div>
 
                     <motion.h1 variants={fadeUp}
                         className="text-6xl md:text-[130px] font-bold leading-[0.85] tracking-tighter mb-8 text-[#1A1A1A]">
