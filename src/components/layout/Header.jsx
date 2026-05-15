@@ -19,16 +19,14 @@ export default function Header() {
             >
                 {/* Main row */}
                 <div className="max-w-[1400px] mx-auto px-6 md:px-12 h-20 flex items-center justify-between gap-6">
-
-                    {/* Left: Location tag (desktop) */}
-                    <div className="hidden md:flex items-center">
-                        <LocationTag />
-                    </div>
-
-                    {/* Center: Wordmark */}
-                    <a href="/" className="absolute left-1/2 -translate-x-1/2 text-2xl font-bold tracking-tighter text-[#1A1A1A] select-none">
+                    {/* Left: Agency logo */}
+                    <a href="/" className="text-2xl font-bold tracking-tighter text-[#1A1A1A] select-none">
                         Agency<span className="text-[#7A7A7A]">.</span>
                     </a>
+
+
+
+
 
                     {/* Right: Nav links + CTA */}
                     <div className="hidden md:flex items-center gap-10">
@@ -37,10 +35,9 @@ export default function Header() {
                                 <a
                                     key={link}
                                     href={`#${link.toLowerCase()}`}
-                                    className="relative py-1 hover:text-[#1A1A1A] transition-colors duration-200 group"
+                                    className="relative py-1 hover:text-[#1A1A1A] transition-colors duration-200"
                                 >
                                     {link}
-                                    <span className="absolute bottom-0 left-0 h-[2px] w-0 bg-[#1A1A1A] group-hover:w-full transition-all duration-300 origin-left" />
                                 </a>
                             ))}
                         </nav>
@@ -49,9 +46,13 @@ export default function Header() {
                             href="#contact"
                             whileHover={{ scale: 1.04 }}
                             whileTap={{ scale: 0.96 }}
-                            className="flex items-center gap-2 px-7 py-3 bg-[#1A1A1A] text-white text-[11px] font-bold tracking-[0.22em] uppercase rounded-full hover:bg-black transition-colors shadow-lg shadow-black/10"
+                            className="btn-primary"
                         >
-                            Start Project <ArrowRight className="w-3.5 h-3.5" />
+                            <span className="btn-slide-wrapper">
+                                <span className="btn-slide-text">Start Project</span>
+                                <span className="btn-slide-text-hover">Let's Talk</span>
+                            </span>
+                            <ArrowRight className="w-3.5 h-3.5" />
                         </motion.a>
                     </div>
 
@@ -97,7 +98,7 @@ export default function Header() {
                             <a
                                 href="#contact"
                                 onClick={() => setMobileMenuOpen(false)}
-                                className="px-8 py-5 bg-[#1A1A1A] text-white text-[14px] font-bold tracking-widest uppercase rounded-full text-center"
+                                className="btn-primary py-5"
                             >
                                 Start a Project
                             </a>

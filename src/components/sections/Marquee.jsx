@@ -13,7 +13,7 @@ export default function Marquee() {
     ];
 
     return (
-        <div className="w-full overflow-hidden border-b border-[#EAE8E3] py-6 bg-white relative z-[40]">
+        <div className="w-full overflow-hidden  py-6 bg-white relative z-[40]">
             <motion.div
                 animate={{ x: [0, -2000] }}
                 transition={{ duration: 40, repeat: Infinity, ease: "linear" }}

@@ -23,8 +23,12 @@ export default function Work() {
                         <h2 className="text-5xl md:text-[80px] font-bold tracking-tighter text-[#1A1A1A] mb-8 leading-[0.9]">Portfolio.</h2>
                         <p className="text-xl text-[#7A7A7A] font-light max-w-xl">A curated collection of our finest implementations for global brands and scaling startups.</p>
                     </div>
-                    <button className="flex items-center gap-3 text-[13px] font-bold tracking-[0.2em] uppercase border-b-2 border-[#1A1A1A] pb-2 hover:text-[#7A7A7A] hover:border-[#7A7A7A] transition-colors">
-                        View Archive <ArrowUpRight className="w-5 h-5" />
+                    <button className="btn-secondary">
+                        <span className="btn-slide-wrapper">
+                            <span className="btn-slide-text">View Archive</span>
+                            <span className="btn-slide-text-hover">See All</span>
+                        </span>
+                        <ArrowUpRight className="w-5 h-5" />
                     </button>
                 </div>
 

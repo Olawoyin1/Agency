@@ -125,12 +125,20 @@ export default function Hero() {
 
                     <motion.div variants={fadeUp} className="flex flex-col sm:flex-row gap-5 w-full sm:w-auto">
                         <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}
-                            className="px-12 py-5 bg-[#1A1A1A] text-white font-bold tracking-[0.1em] text-[14px] uppercase rounded-full hover:bg-black transition-colors flex items-center justify-center gap-3 shadow-xl shadow-black/10">
-                            Discuss a Project <ArrowUpRight className="w-4 h-4" />
+                            className="btn-primary">
+                            <span className="btn-slide-wrapper">
+                                <span className="btn-slide-text">Discuss a Project</span>
+                                <span className="btn-slide-text-hover">Book a Call</span>
+                            </span>
+                            <ArrowUpRight className="w-4 h-4" />
                         </motion.button>
                         <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}
-                            className="px-12 py-5 bg-white/50 backdrop-blur-md text-[#1A1A1A] border border-[#EAE8E3] font-bold tracking-[0.1em] text-[14px] uppercase rounded-full hover:border-[#1A1A1A] hover:bg-white transition-all flex items-center justify-center gap-3 shadow-sm">
-                            <Play className="w-4 h-4" /> View Showreel
+                            className="btn-secondary">
+                            <Play className="w-4 h-4" />
+                            <span className="btn-slide-wrapper">
+                                <span className="btn-slide-text">View Showreel</span>
+                                <span className="btn-slide-text-hover">Watch Now</span>
+                            </span>
                         </motion.button>
                     </motion.div>
                 </motion.div>

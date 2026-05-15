@@ -48,9 +48,13 @@ export default function Contact() {
                             <motion.button
                                 whileHover={{ scale: 1.02 }}
                                 whileTap={{ scale: 0.98 }}
-                                className="self-start mt-8 px-12 py-5 bg-white text-[#1A1A1A] text-[13px] font-bold tracking-[0.2em] uppercase rounded-full hover:bg-gray-200 transition-all flex items-center justify-center gap-4 shadow-xl"
+                                className="btn-primary-white self-start mt-8"
                             >
-                                Send Request <ArrowUpRight className="w-5 h-5" />
+                                <span className="btn-slide-wrapper">
+                                    <span className="btn-slide-text">Send Request</span>
+                                    <span className="btn-slide-text-hover">Let's Go</span>
+                                </span>
+                                <ArrowUpRight className="w-5 h-5" />
                             </motion.button>
                         </form>
                     </div>
