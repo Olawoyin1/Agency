@@ -14,13 +14,13 @@ export default function Work() {
 
     return (
         <div
-            className="relative bg-white pt-48 pb-60 -mt-20 z-20"
-            style={{ clipPath: "ellipse(120% 100% at 50% 0%)" }}
+            className="relative bg-white pt-32 md:pt-48 pb-24 md:pb-48 -mt-20 z-20"
+            style={{ clipPath: "ellipse(300% 100% at 50% 0%)" }}
         >
             <section id="portfolio" className="px-6 md:px-12 w-full max-w-[1400px] mx-auto">
                 <div className="mb-24 lg:mb-32 flex flex-col md:flex-row justify-between items-start md:items-end gap-8">
                     <div>
-                        <h2 className="text-5xl md:text-[80px] font-bold tracking-tighter text-[#1A1A1A] mb-8 leading-[0.9]">Portfolio.</h2>
+                        <h2 className="text-5xl md:text-[80px] font-bold tracking-tighter text-[#1A1A1A] mb-2 md:mb-8 leading-[0.9]">Portfolio.</h2>
                         <p className="text-xl text-[#7A7A7A] font-light max-w-xl">A curated collection of our finest implementations for global brands and scaling startups.</p>
                     </div>
                     <button className="btn-secondary">
@@ -32,7 +32,7 @@ export default function Work() {
                     </button>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-x-12 gap-y-24">
+                <div className="grid md:grid-cols-2 gap-x-12 gap-y-12 md:gap-y-24">
                     {projects.map((item, idx) => (
                         <motion.div
                             key={idx}

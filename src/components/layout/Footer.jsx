@@ -1,5 +1,6 @@
 import React from 'react';
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight, MapPin } from 'lucide-react';
+import { FaTwitter, FaLinkedin, FaInstagram, FaFigma } from 'react-icons/fa';
 
 export default function Footer() {
     return (
@@ -33,7 +34,19 @@ export default function Footer() {
                     <div>
                         <h4 className="text-[11px] font-bold tracking-[0.2em] uppercase text-white/50 mb-10">Inquiries</h4>
                         <p className="text-2xl font-light mb-6 hover:text-[#7A7A7A] transition-colors cursor-pointer w-fit">hello@agency.com</p>
-                        <p className="text-[#7A7A7A] text-lg font-light leading-relaxed">1200 Digital Avenue<br />San Francisco, CA 94103<br />United States</p>
+
+                        <div className="flex items-center gap-2 text-[#7A7A7A] mb-10 font-bold tracking-[0.1em] uppercase text-[11px]">
+                            <MapPin className="w-3.5 h-3.5" />
+                            <span>Remote</span>
+                        </div>
+
+                        <div className="flex gap-4">
+                            {[FaTwitter, FaLinkedin, FaInstagram, FaFigma].map((Icon, i) => (
+                                <a key={i} href="#" className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-white hover:text-[#1A1A1A] transition-all">
+                                    <Icon className="w-4 h-4" />
+                                </a>
+                            ))}
+                        </div>
                     </div>
                 </div>
 

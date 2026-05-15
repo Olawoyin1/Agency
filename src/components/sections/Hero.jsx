@@ -13,12 +13,12 @@ const staggerContainer = {
 };
 
 const cards = [
-    { img: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=900&auto=format&fit=crop", title: "Creative solutions", rotate: -4 },
-    { img: "https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?q=80&w=900&auto=format&fit=crop", title: "Campaign concepts", rotate: 7 },
-    { img: "https://images.unsplash.com/photo-1614850523459-c2f4c699c52e?q=80&w=900&auto=format&fit=crop", title: "Digital craftsman", rotate: -8 },
-    { img: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=900&auto=format&fit=crop", title: "Brand architecture", rotate: 5 },
-    { img: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=900&auto=format&fit=crop", title: "System design", rotate: -6 },
-    { img: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=900&auto=format&fit=crop", title: "Web engineering", rotate: 9 },
+    { img: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=900&auto=format&fit=crop", title: "High-Growth SaaS", rotate: -4 },
+    { img: "https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?q=80&w=900&auto=format&fit=crop", title: "UX Architecture", rotate: 7 },
+    { img: "https://images.unsplash.com/photo-1614850523459-c2f4c699c52e?q=80&w=900&auto=format&fit=crop", title: "Custom Platforms", rotate: -8 },
+    { img: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=900&auto=format&fit=crop", title: "Brand Identity", rotate: 5 },
+    { img: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=900&auto=format&fit=crop", title: "Enterprise Dashboards", rotate: -6 },
+    { img: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=900&auto=format&fit=crop", title: "Product Strategy", rotate: 9 },
 ];
 
 // Slot positions for the 5 positions: far-left, left, center, right, far-right
@@ -73,7 +73,7 @@ export default function Hero() {
     };
 
     return (
-        <section className="relative pt-48 pb-0 md:pt-64 max-w-full w-full min-h-[100vh] flex flex-col items-center bg-[#FAF9F6] overflow-hidden">
+        <section className="relative pt-48 pb-32 md:pt-64 max-w-full w-full md:min-h-[100vh] flex flex-col items-center bg-[#FAF9F6] overflow-hidden">
 
             {/* ── Background Ambience ─────────────────────────────── */}
             <div className="absolute inset-0 z-0 pointer-events-none opacity-[0.035]"
@@ -145,7 +145,7 @@ export default function Hero() {
             </div>
 
             {/* ── Fan Carousel ────────────────────────────────────── */}
-            <div className="relative mt-20 md:mt-28 w-full h-[420px] md:h-[500px] flex items-start justify-center flex-shrink-0 z-20">
+            <div className="hidden md:flex relative mt-20 md:mt-28 w-full h-[420px] md:h-[500px] items-start justify-center flex-shrink-0 z-20">
                 {cards.map((card, i) => (
                     <div key={i} style={cardStyle(i)}>
                         {/* Polaroid */}

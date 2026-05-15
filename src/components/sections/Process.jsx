@@ -13,10 +13,10 @@ export default function Process() {
         <section id="process" className="py-24 md:py-32 px-6 md:px-12 max-w-[1400px] mx-auto bg-[#FAF9F6]">
             <div className="grid lg:grid-cols-12 gap-16 lg:gap-24">
                 <div className="lg:col-span-5">
-                    <h2 className="text-5xl md:text-[80px] font-bold tracking-tighter mb-10 text-[#1A1A1A] leading-[0.9]">Process.</h2>
-                    <p className="text-xl text-[#7A7A7A] font-light mb-20 text-balance leading-relaxed">A refined methodology focused on ruthless simplicity and high-impact engineering that scales.</p>
+                    <h2 className="text-5xl md:text-[80px] font-bold tracking-tighter mb-5 md:mb-10 text-[#1A1A1A] leading-[0.9]">Process.</h2>
+                    <p className="text-base md:text-xl text-[#7A7A7A] font-light mb-10 md:mb-20 text-balance leading-relaxed">A refined methodology focused on ruthless simplicity and high-impact engineering that scales.</p>
 
-                    <div className="flex flex-col gap-12 bg-white p-12 rounded-[40px] border border-[#EAE8E3] shadow-sm">
+                    <div className="flex flex-col gap-12 bg-white p-8 md:p-12 rounded-[40px] border border-[#EAE8E3] shadow-sm">
                         {[
                             { title: "Pure Logic", desc: "No templates. No bloat. Just lean, high-fidelity code engineered for growth." },
                             { title: "Strategic Velocity", desc: "Rapid iterations backed by deep architectural thinking and context." },
