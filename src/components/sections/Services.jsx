@@ -15,9 +15,9 @@ export default function Services() {
     return (
         <section id="services" className="py-16 md:py-40 px-6 md:px-12 w-full bg-[#FAF9F6] relative z-[30]">
             <div className="max-w-[1400px] mx-auto">
-                <div className="flex flex-col lg:flex-row justify-between mb-24 lg:mb-32 md:gap-10">
+                <div className="flex flex-col lg:flex-row justify-between mb-10 lg:mb-32 md:gap-10">
                     <h2 className="text-5xl md:text-[100px] font-bold tracking-tighter text-[#1A1A1A] leading-[0.9]">What We Do.</h2>
-                    <p className="text-xl md:text-2xl text-[#7A7A7A] font-light max-w-lg leading-relaxed pt-4">
+                    <p className="text-base md:text-xl md:text-2xl text-[#7A7A7A] font-light max-w-lg leading-relaxed pt-4">
                         Meticulously crafted solutions across strategy, design, and engineering to elevate your brand above the ambient noise.
                     </p>
                 </div>

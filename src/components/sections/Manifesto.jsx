@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 export default function Manifesto() {
     return (
         <div
-            className="relative bg-[#1A1A1A] pt-40 pb-40 md:pt-60 md:pb-60 -mt-20 z-20"
+            className="relative bg-[#1A1A1A] pt-24 pb-24 md:pt-60 md:pb-60 -mt-20 z-20"
             style={{ clipPath: "ellipse(120% 100% at 50% 100%)" }}
         >
             <div className="max-w-[1400px] mx-auto px-6 md:px-12 text-center text-white">

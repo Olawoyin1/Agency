@@ -73,7 +73,7 @@ export default function Hero() {
     };
 
     return (
-        <section className="relative pt-48 pb-32 md:pt-64 max-w-full w-full md:min-h-[100vh] flex flex-col items-center bg-[#FAF9F6] overflow-hidden">
+        <section className="relative pt-48 pb-46 md:pt-64 max-w-full w-full md:min-h-[100vh] flex flex-col items-center bg-[#FAF9F6] overflow-hidden">
 
             {/* ── Background Ambience ─────────────────────────────── */}
             <div className="absolute inset-0 z-0 pointer-events-none opacity-[0.035]"
